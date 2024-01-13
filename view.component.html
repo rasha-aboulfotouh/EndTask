@@ -1,0 +1,23 @@
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * *    View      * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div class="container w-60 mt-5" >
+    <div class="card text-center"  >
+        <div class="card-header">
+           <h2><i class='bx bxs-user-detail'></i> User Details </h2>
+        </div>
+
+        <div class="card-body" >
+            <h3 class="card-title"> {{user?.name}} </h3>
+
+            <p class="card-text"> age: {{user?.age}} </p>
+            <p class="card-text"> address: {{user?.address}} </p>
+            <p class="card-text"> User Name: {{user?.email}} </p>
+            <p class="card-text"> Password: {{user?.password}} </p>
+
+            <a [routerLink]="['/']" class="btn btn-primary"> Go Back </a>
+        </div>
+
+    </div>
+</div>

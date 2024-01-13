@@ -1,0 +1,18 @@
+
+
+
+.form-group {
+    padding-bottom: 10px ;
+}
+
+label {
+    width: 60px;
+  
+}
+
+input {
+    margin-left: 30px;
+    width: 25rem;
+    height: 50px;
+    background-color: antiquewhite;
+}

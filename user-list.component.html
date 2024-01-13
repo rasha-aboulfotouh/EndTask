@@ -1,0 +1,49 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * *    List      * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<div class="container ">
+  <div class="row justify-content-center">
+    <button class="btn btn-primary m-4 btn-sm " [routerLink]="['add']">
+      <i class='bx bxs-user-plus bx-tada bx-flip-horizontal bx-md'></i>
+      <br> <b>Add User</b>
+      
+    </button>
+    <table class="table w-100">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">address</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <ng-container *ngFor="let x of users ">
+          <tr>
+            <th scope="row">{{x.id}}</th>
+            <td> <b> {{x.name}} </b> </td>
+            <td> {{x.email}}</td>
+            <td> {{x.address}}</td>
+            <td>
+              <button class="btn btn-danger float-end button" (click)="deleteUser(x.id)">
+                <i class='bx bxs-trash  '></i>  Delete</button> 
+
+              <button class="btn btn-success float-end button" [routerLink]="['edit',x.id]">
+                <i class='bx bxs-edit-alt bx-tada'></i> Edit </button>
+
+              <button class="btn btn-info float-end button" [routerLink]="['view',x.id]">
+                <i class='bx bxs-user-detail bx-tada'></i> View </button>
+
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+
+    </table>
+  </div>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

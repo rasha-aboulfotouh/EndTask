@@ -1,0 +1,23 @@
+
+.container {
+    border: 1px solid black;
+    width: 55%;
+    height: 40%;
+
+}
+
+.form-group {
+    padding-bottom: 8px ;
+}
+
+label {
+    width: 60px;
+  
+}
+
+input {
+    margin-left: 30px;
+    width: 25rem;
+    height: 40px;
+    background-color: #f3dddd;
+}
